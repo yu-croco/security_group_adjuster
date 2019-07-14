@@ -3,7 +3,9 @@ require 'yaml'
 require_relative 'lib/aws-sdk'
 require_relative 'lib/ip'
 
-config = YAML.load(File.read("./config/aws.yaml"))
+config = YAML.load(File.read("./config/aws.yml"))
+raise "Please configure your target resource information at './config/aws.yml'" if config.values.any?{ |c| c.nil? }
+
 sg = SecurityGroup.new(
   id: config[:security_group_id],
   region: config[:region_id]

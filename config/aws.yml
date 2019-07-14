@@ -1,5 +1,5 @@
 # Configure your target resource information here
-security_group_id:
-region_id:
-description:
-port:
+:security_group_id:
+:region_id:
+:description:
+:port:
