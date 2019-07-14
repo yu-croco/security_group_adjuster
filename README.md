@@ -10,5 +10,8 @@
 3. configure your target resource at `config/aws.yml`
 4. run `ruby main.rb`
 
+## reference
+- In this repository, I used [Class: Aws::EC2::SecurityGroup](https://docs.aws.amazon.com/sdkforruby/api/Aws/EC2/SecurityGroup.html) to handle accessing to AWS. Please refer it about the detail.
+
 ## Licence
 MIT license
