@@ -14,7 +14,7 @@ current_ip = Ip.external_address
 puts "starts changing original_ip: #{original_ip}\
       description: #{config[:description]} to #{current_ip}"
 
-ec2.update_ip(
+sg.update_ip(
   to_ip: current_ip,
   port: config[:port],
   description: description[:description]
