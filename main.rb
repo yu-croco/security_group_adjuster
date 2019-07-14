@@ -1,6 +1,6 @@
 require 'yaml'
 
-require_relative 'lib/aws-sdk'
+require_relative 'lib/security_grpup'
 require_relative 'lib/ip'
 
 config = YAML.load(File.read("./config/aws.yml"))

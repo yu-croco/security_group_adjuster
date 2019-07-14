@@ -1,3 +1,4 @@
+require 'aws-sdk'
 class AwsSecurityGroup
   def initialize(id:, region:)
     @sg = Aws::EC2::SecurityGroup.new(id: id, region: region)
